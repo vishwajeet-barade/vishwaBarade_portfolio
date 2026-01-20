@@ -1,4 +1,4 @@
-# ✅ Firebase Setup Checklist for Vishwajeet
+# ✅ Firebase Setup 
 
 ## Status: Firebase Configured ✅
 
@@ -34,7 +34,7 @@ service cloud.firestore {
     match /{document=**} {
       allow read: if true;
       allow write: if request.auth != null && 
-                     request.auth.token.email == 'baradevishwajeet15@gmail.com';
+                     request.auth.token.email == [EMAIL_ADDRESS]';
     }
   }
 }
@@ -42,14 +42,14 @@ service cloud.firestore {
 
 3. Click **"Publish"**
 
-#### C. Enable Firebase Storage
+#### C. Enable Firebase Storage(Not Need We use Claudinary or image storage)
 1. Click **"Storage"** in left sidebar
 2. Click **"Get started"**
 3. Select **"Start in production mode"**
 4. Use same location: **asia-south1**
 5. Click **"Done"**
 
-#### D. Set Storage Security Rules
+#### D. Set Storage Security Rules(No Need We use Claudinary or image storage)
 1. In Storage, click **"Rules"** tab
 2. **Copy this and paste:**
 
@@ -60,7 +60,7 @@ service firebase.storage {
     match /{allPaths=**} {
       allow read: if true;
       allow write: if request.auth != null && 
-                     request.auth.token.email == 'baradevishwajeet15@gmail.com';
+                     request.auth.token.email == [EMAIL_ADDRESS]';
     }
   }
 }

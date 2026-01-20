@@ -18,9 +18,9 @@
 ### 1. Sign Up (Free)
 1. Go to: **https://cloudinary.com/users/register/free**
 2. Fill in:
-   - **Email:** baradevishwajeet15@gmail.com (or your preferred email)
+   - **Email:**  (or your preferred email)
    - **Password:** (create a strong password)
-   - **Cloud name:** `vishwajeet-portfolio` (or any name you like)
+   - **Cloud name:** ` (or any name you like)
 3. Click **"Create Account"**
 4. **Verify your email** (check inbox)
 
@@ -36,8 +36,8 @@
 ### Find Your Credentials:
 1. In Cloudinary Dashboard, look at the top
 2. You'll see:
-   - **Cloud name:** `vishwajeet-portfolio` (or what you chose)
-   - **API Key:** `123456789012345` (numbers)
+   - **Cloud name:** `` (or what you chose)
+   - **API Key:** `
    - **API Secret:** `abcdefghijklmnop` (letters/numbers)
 
 ### Copy These Values:

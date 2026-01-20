@@ -62,8 +62,11 @@ git push -u origin main
 
 ### Add Environment Variables
 
+⚠️ **CRITICAL:** Your deployment will fail if you don't add ALL environment variables!
+
 Click "Environment Variables" and add all variables from your `.env.local`:
 
+#### Firebase Variables (Required)
 \`\`\`
 NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
@@ -74,7 +77,24 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 NEXT_PUBLIC_ADMIN_EMAIL=your_email@example.com
 \`\`\`
 
-**Important:** Make sure to add these for all environments (Production, Preview, Development)
+#### Cloudinary Variables (Required for image uploads)
+\`\`\`
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
+NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=portfolio_upload
+\`\`\`
+
+**How to Add Each Variable:**
+1. Click "Add New" for each variable
+2. Enter the **Key** (variable name) exactly as shown above
+3. Enter the **Value** from your `.env.local` file (without quotes)
+4. Select **ALL three environments**: Production, Preview, Development
+5. Click "Save"
+
+**Important:** 
+- Copy values from your local `.env.local` file
+- Don't include quotes around values
+- Make sure to add these for all environments (Production, Preview, Development)
+- If you skip any variable, deployment will fail!
 
 ### Deploy
 
